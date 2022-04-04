@@ -41,6 +41,8 @@ public class Q03_PrimitiveDataTypes {
         long longMin = Long.MIN_VALUE;
         System.out.println("longMin = " + longMin);
 
+
+
         //long, double, float veri tiplerinin max ve min degerlerini yazdiralim.
 
 

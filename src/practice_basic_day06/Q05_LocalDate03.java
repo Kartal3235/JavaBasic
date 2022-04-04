@@ -22,6 +22,10 @@ public class Q05_LocalDate03 {
             E. The code does not compile.
             F. A runtime exception is thrown.
             */
+            //Invalid date 'February 29' as '2018' is not a leap year(bu yüzden exception verir,artık yıl/leeap year)
+        System.out.println(LocalDate.now().isLeapYear());
 
+        //Artık yıl olup olmadığını belirler boolean sonuç döndürür.
+        //false
     }
 }
