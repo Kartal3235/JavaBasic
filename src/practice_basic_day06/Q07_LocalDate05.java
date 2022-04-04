@@ -13,18 +13,20 @@ public class Q07_LocalDate05 {
         Asagidaki code'un  ciktisi  nedir?
         */
 
-        LocalDateTime d = LocalDateTime.of(2015, 5, 10, 11, 22, 33);
+        LocalDateTime d = LocalDateTime.of(2015, 5, 10, 11, 22, 33);// Zaman cetveli tanımlanmış
 
-        Period p = Period.ofDays(1).ofYears(2);
+        Period p = Period.ofDays(1).ofYears(2);// Periyot class dan p objemiz var,
+                                                // en son hangisi eklendiyse o geçerlidir,SADECE "YIL"
+                                                // öncekileri geçersiz kılar.
 
-        d = d.minus(p);
+        d = d.minus(p);// Zaman cetvelinde  mines geriye gider,yukardan aldığı 2 yılı geriye götürerek 2013 olarak atama yapar.
 
-        DateTimeFormatter f = DateTimeFormatter.ofLocalizedDateTime(FormatStyle.SHORT);
+        DateTimeFormatter f = DateTimeFormatter.ofLocalizedDateTime(FormatStyle.SHORT);// SANİYEYİ ALMAMIŞ
 
-        System.out.println(d.format(f));
+        System.out.println(d.format(f));//10.05.2013 11:22
 
  /*
-            A. 5/9/13 11:22
+            A. 5/9/13 11:22// yanlış !!DİKKAT!!
             B. 5/10/13 11:22
             C. 5/9/14
             D. 5/10/14

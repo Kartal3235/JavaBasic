@@ -12,10 +12,13 @@ public class Q06_LocalDate04 {
         */
 
         LocalDate date = LocalDate.of(2018, Month.APRIL, 30);
-        date.plusDays(2);
-        date.plusYears(3);
 
-        System.out.println(date.getYear() + " " + date.getMonth() + " " + date.getDayOfMonth());
+        date.plusDays(2);// Değerler e 2 günn arttırma
+
+        date.plusYears(3);// 3 yıl arttırma
+
+        System.out.println(date.getYear() + " " + date.getMonth() + " " + date.getDayOfMonth());// sonuç değişmez
+                                                                                                // çünkü atama yapılmadı
 /*
             A. 2018 APRIL 2
             B. 2018 APRIL 30
