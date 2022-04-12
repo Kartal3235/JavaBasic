@@ -15,8 +15,6 @@ public class Q03_PrimeNumber {
 
         boolean asalMi= true;
 
-
-
        if(sayi>=2){
            for (int i = 2; i <sayi;i++){
                if(sayi%i==0){

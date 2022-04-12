@@ -17,9 +17,6 @@ public class ObjectClass {
 
         System.out.println("obj1 : " + obj1); //referans degeri yazdirir
 
-        System.out.println("obj1 : " + obj1); //referans degeri yazdirir
-
-
         OgretmenBilgileri obj2= new OgretmenBilgileri();
         obj2.isim="Gulsen";
         obj2.soyisim="Genc";
@@ -30,8 +27,5 @@ public class ObjectClass {
         System.out.println(obj1.isim +" "+obj1.soyisim+", "+obj1.yas +", "+obj1.brans+", "+obj1.tel);
         System.out.println(obj2.isim +" "+obj2.soyisim+", "+obj2.yas +", "+obj2.brans+", "+obj2.tel);
     }
+
 }
-
-
-
-

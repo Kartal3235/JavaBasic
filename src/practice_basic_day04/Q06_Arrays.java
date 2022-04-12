@@ -17,7 +17,6 @@ public class Q06_Arrays {
                 toplam1 += arr1[i][j];
             }
         }
-
         System.out.println("toplam1 = " + toplam1);
 
         int toplam2 = 0;

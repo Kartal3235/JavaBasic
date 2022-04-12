@@ -6,18 +6,19 @@ import java.time.format.DateTimeFormatter;
 
 public class Q09_ZoneDateTime {
     // Baska ülke veya bolgelerin saat dilimine gore zamani alma
-    // Newyork un saat dilimine gore saat ?
+    // New york un saat dilimine gore saat ?
+    // zoneId Link :https://docs.oracle.com/javase/8/docs/api/java/time/ZoneId.html
     public static void main(String[] args) {
+        ZonedDateTime zdt = ZonedDateTime.now(ZoneId.of("America/New_York"));
+        //String ifade onemli, hatasiz yazilmasi gerek.. yoksa Unknown time-zone ID hatasi verir
 
-        ZonedDateTime zdt= ZonedDateTime.now(ZoneId.of("America/Los_Angeles"));
-        // String ifade önemli,hatasız yazılması gerekiyor.
+        ZonedDateTime zdtLocal =ZonedDateTime.now(); //yerelde bulundugunuz yerin zamanini verir
 
-        ZonedDateTime ztdLocal=ZonedDateTime.now();
+        DateTimeFormatter format = DateTimeFormatter.ofPattern("dd.MM.yyyy  HH:mm" ); //istenilen formatta
 
-        DateTimeFormatter format= DateTimeFormatter.ofPattern("dd-MM-yyyy");
+        System.out.println("zdt = " + zdt.format(format));
+        System.out.println("zdtLocal = " + zdtLocal.format(format));
 
-        System.out.println("ztd= "+zdt.format(format));
-        System.out.println("ztdLocal= "+ztdLocal.format(format));
 
     }
 }

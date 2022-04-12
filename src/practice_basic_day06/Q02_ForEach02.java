@@ -9,20 +9,21 @@ public class Q02_ForEach02 {
     // Print all the elements from array using for eachLoop
     // If an element starts with 'v' then quit the loop
     public static void main(String[] args) {
+
         String[] list = {"fruits", "vegetables", "meat", "milk"};
+        for (String element:list
+             ) {
+            System.out.print(element + " : " + element.length() + " " ); //fruits : 6 vegetables : 10 meat : 4 milk : 4
 
-        for (String each:list
-             ) {
-            System.out.println(each+" ");
-            System.out.println(each.length());
         }
-        for (String each:list
+        System.out.println();
+        for (String item:list
              ) {
-            if(each.startsWith("v"))
+            if(item.startsWith("v")) {
                 break;
-            System.out.println(each);
+            }
+            System.out.println(item);
 
         }
-
     }
 }
